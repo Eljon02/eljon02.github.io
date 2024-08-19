@@ -1,0 +1,233 @@
+/* MAIN */
+
+* {
+    margin: 2px;
+    padding: 2px;
+}
+
+body {
+    background-image: url("./images/bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+p {
+    color: rgb(54, 128, 45);
+}
+
+/* BUTTONS */
+
+button {
+    font-weight: 600;
+    padding: 10px;
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+    border: gainsboro solid;
+    border-width: 2px;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(54, 128, 45);
+    border: rgb(35, 77, 32) solid;
+}
+
+/* HEADER */
+
+header, .header-links {
+    display: flex;
+}
+
+header {
+    min-height: 50px;
+    margin: 5px;
+    padding: 5px;
+    background-color: gainsboro;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+}
+
+.header-links {
+    gap: 20px;
+    list-style: none;
+    font-size: 20px;
+}
+
+a {
+    color: rgb(54, 128, 45);
+    text-decoration: none;
+    text-decoration-color: black;
+}
+
+a:hover {
+    color: rgb(35, 77, 32);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+
+.name {
+    font-family:'Lucida Sans';
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo {
+    max-height: 30px;
+    display: none;
+}
+
+/* PROFILI */
+
+section {
+    padding-top: 20px;
+    height: 90%;
+    margin: 0 10px;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 80%;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 450px;
+    margin: auto 100px;
+}
+
+.section__text {
+    margin-right: 200px;
+    align-self: center;
+    text-align: center;
+}
+
+.title {
+    color: rgb(35, 77, 32);
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ABOUT */
+
+#about, #projects, #contact {
+    text-align: center;
+    justify-content: center;
+}
+
+#about > .title {
+    text-decoration: underline;
+}
+
+#projects > .title {
+    text-decoration: underline;
+}
+
+#contact > .title {
+    text-decoration: underline;
+}
+
+.about__text {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.about__p {
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 25px;
+    max-width: 500px;
+    margin: 0 20px;
+}
+
+/* PROJEKTET */
+
+.image__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.single__image {
+    display: flex;
+    height: 480px;
+    padding: 20px;
+    margin: 10px 10px;
+}
+
+.single__image:hover {
+    height: 500px;
+    padding: 10px;
+}
+
+/* CONTACT */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-info-main-container {
+    width: 600px;
+    margin: 30px 0px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-radius: 15px;
+    border-width: 2px;
+    border: gainsboro solid;
+    padding: 10px;
+}
+
+.contact-info-container {
+    padding: 10px;
+    margin: 0px 20px;
+}
+
+.icon {
+    max-width: 30px;
+}
+
+footer > * {
+    color: white;
+    padding: 10px;
+    background-color: rgb(35, 77, 32);
+}
+
+/* PJESA RESPONSE-IT */
+
+@media screen and (max-width: 950px) {
+    .name {
+        display: none;
+    }
+    .logo {
+        display: flex;
+    }
+
+    .section-container {
+        display: block;
+    }
+
+    .section__pic-container {
+        margin: 0px 0px;
+    }
+
+    .section__text {
+        margin: 20px 0px;
+    }
+}
