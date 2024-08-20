@@ -1,101 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EK - Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-    <header>
-        <div class="name">Eljon Kastrati</div>
-        <img class="logo" src="./images/logoEK.png" alt="EK Logo" />
-        <div>
-          <ul class="header-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </header>
-      <section id="profile">
-        <div class="section-container">
-          <div class="section__pic-container">
-            <img class="portfolio-image" src="./images/portfolioBG.png" alt="Portfolio-Image" />
-          </div>
-          <div class="section__text">
-            <p>Hello, I'm</p>
-            <h1 class="title">Eljon Kastrati</h1>
-            <p>Sports' Graphic Designer</p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2"
-                onclick="window.open('./assets/EljonKastrati_Portfolio.pdf')"
-              >
-                Download CV
-              </button>
-              <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                Contact Info
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr>
-      <section id="about">
-        <p>Get to know more...</p>
-        <p class="title">About me</p>
-        <div class="about__text">
-          <div>
-            <p class="about__p">I am a computer-savvy individual with a passion for football.
-              My technical skills include proficient use of computers,
-              software applications, and digital tools.<br/> I am a quick learner
-              and adapt easily to new technologies.</p>
-          </div>
-          <div>
-            <p class="about__p">As a Junior Graphic Designer, I began my journey by
-              contributing fresh ideas and collaborating with the design
-              team.<br/>Recognizing my dedication and skills, I was promoted
-              to the role of Senior Graphic Designer</p>
-          </div>
-        </div>
-      </section>
-      <hr>
-      <section id="projects">
-        <p>Check my latest</p>
-        <p class="title">Projects</p>
-        <div class="image__container">
-          <div class="single__image">
-            <img src="./images/p1.jpg" alt="Project 1"/>
-          </div>
-          <div class="single__image">
-            <img src="./images/p2.jpg" alt="Project 2"/>
-          </div>
-          <div class="single__image">
-            <img src="./images/p3.jpg" alt="Project 3"/>
-          </div>
-          <div class="single__image">
-            <img src="./images/p4.jpg" alt="Project 4"/>
-          </div>
-        </div>
-      </section>
-      <hr>
-      <section id="contact">
-        <p>Get in touch</p>
-        <p class="title">Contact me</p>
-        <div class="contact-info-main-container">
-          <div class="contact-info-container">
-            <img src="./images/email.png" alt="Email icon" class="icon"/>
-            <p><a href="mailto:eljonkastrati@gmail.com">eljonkastrati@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img src="./images/telephone.png" alt="telephone icon" class="icon"/>
-            <p>+383 44 123 123</p>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <p>© Eljon Kastrati</p>
-      </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eljon Kastrati - Porfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <!-- Navbar -->
+     <div class="navbar">
+      <a href="index.html" class="logotype">Eljon Kastrati.</a>
+
+      <nav class="nav">
+        <a href="index.html" class="active">Kreu</a>
+        <a href="projects.html">Projektet</a>
+        <a href="clients.html">Klientët</a>
+        <a href="contact.html">Kontakti</a>
+      </nav>
+    </div>
+
+    <!-- Headeri -->
+    <header class="header">
+      <div class="text">
+        <h1 style="margin-bottom: 6px;">Eljon Kastrati</h1>
+        <h3 style="line-height: 1.4px;">Graphic Designer</h3>
+        <p style="margin-top: 40px; margin-bottom: 20px;">Dizajner grafik me më shumë se 5 vite përvojë profesionale dhe i apasionuar pas futbollit.</p>
+        <a class="linkbtn" href="/contatc.html"><button>Më kontaktoni</button></a>
+        <a class="linkbtn" href="assets/EK-CV.pdf"><button class="btn">Shkarko CV</button></a>
+      </div>
+
+      <!-- Social medias -->
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/eljon-kastrati/"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://x.com/footballkosovo"><i class='bx bxl-twitter'></i></a>
+      </div>
+    </header>
+  </body>
 </html>

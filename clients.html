@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eljon Kastrati - Clients</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      let currentSlide = 0;
+
+      function moveSlide(direction) {
+        const sliderWrapper = document.querySelector(".slider-wrapper");
+        const totalClients = 8;
+        const visibleClients = 3; // Number of clients visible at once
+        const maxSlide = totalClients - visibleClients;
+
+        currentSlide += direction;
+
+        if (currentSlide < 0) {
+          currentSlide = 0; // Prevent sliding beyond the first client
+        } else if (currentSlide > maxSlide) {
+          currentSlide = maxSlide; // Prevent sliding beyond the last client
+        }
+
+        const slideAmount = -(currentSlide * 332); // Adjust based on visibleClients
+        sliderWrapper.style.transform = `translateX(${slideAmount}px)`;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="navbar">
+      <a href="index.html" class="logotype">Eljon Kastrati.</a>
+      <nav class="nav">
+        <a href="index.html">Kreu</a>
+        <a href="projects.html">Projektet</a>
+        <a href="clients.html" class="active">Klientët</a>
+        <a href="contact.html">Kontakti</a>
+      </nav>
+    </div>
+
+    <div class="clients-header">
+        <h1>5 vite përvojë profesionale</h1>
+        <h3>Klientë të ndryshëm, detyra të ndryshme</h3>
+        <h3 class="punchline">Pasioni i njejtë!</h3>
+    </div>
+
+    <!-- Slider -->
+    <section class="client-slider">
+      <div class="slider-container">
+        <!-- Left Arrow -->
+        <div style="z-index: 1;" class="slider-arrow left" onclick="moveSlide(-1)">&#10094;</div>
+
+        <!-- Clients -->
+        <div class="slider-wrapper">
+          <div class="slider-item">
+            <img src="images/Logo/logo_cncpt.png" alt="Concept Graphics Logo" />
+            <h3>Concept Graphic</h3>
+            <ul>
+              <li>Graphic Designer</li>
+              <li>Social Media Manager</li>
+              <li>Content Creator</li>
+            </ul>
+          </div>
+          <div class="slider-item">
+            <img src="images/Logo/logo_drd.png" alt="DardanianFooty Logo" />
+            <h3>DardanianFooty</h3>
+            <ul>
+              <li>Brand Manager</li>
+              <li>Graphic Designer</li>
+              <li>Content Creator</li>
+            </ul>
+          </div>
+          <div class="slider-item">
+            <img src="images/Logo/logo_hrt.png" alt="Herta Loog" />
+            <h3>Herta GJK</h3>
+            <ul>
+              <li>Programmer</li>
+              <li>IT Specialist</li>
+              <li>Marketing & Graphic Designer</li>
+            </ul>
+          </div>
+          <div class="slider-item">
+            <img src="images/Logo/logo_ksfoot.png" alt="Football Kosovo Logo" />
+            <h3>Football Kosovo</h3>
+            <ul>
+              <li>Web Designer</li>
+              <li>Social Media Manager</li>
+              <li>Brand Manager</li>
+            </ul>
+          </div>
+          <div class="slider-item">
+            <img src="images/Logo/logo_stop.png" alt="Stop Shop Logo" />
+            <h3>STOP Shop</h3>
+            <ul>
+              <li>Ligjërues i Graphic Design</li>
+              <li>Content Creator</li>
+              <li>Brand Consultant</li>
+            </ul>
+          </div>
+          <div class="slider-item">
+            <img src="images/Logo/logo_ftksnet.png" alt="FutbolliKosovar.Net Logo" />
+            <h3>FutbolliKosovar.Net</h3>
+            <ul>
+              <li>Web Designer</li>
+              <li>Graphic Designer</li>
+              <li>Social Media Manager</li>
+            </ul>
+          </div>
+          <div class="slider-item">
+            <img src="images/Logo/logo_kscoeff.png" alt="KosovoCoeff Logo" />
+            <h3>Kosovo Coefficient</h3>
+            <ul>
+              <li>Data Analysis</li>
+              <li>Content Creator</li>
+              <li>Brand Consultant</li>
+            </ul>
+          </div>
+          <div class="slider-item">
+            <img src="images/Logo/logo_lig.png" alt="LIG Sport" />
+            <h3>LIG Sport</h3>
+            <ul>
+              <li>Graphic Designer</li>
+              <li>Brand Consultant</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Right Arrow -->
+        <div class="slider-arrow right" onclick="moveSlide(1)">&#10095;</div>
+      </div>
+    </section>
+  </body>
+</html>
